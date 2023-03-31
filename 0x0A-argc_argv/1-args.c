@@ -2,15 +2,13 @@
 
 /**
  * main - prints the number of arguments passed into it.
- * @argc: argument count
- * @argv: arguments
- *
- * Return: 0
+ * @argc: number of command line arguments.
+ * @argv: array that contains the program command line arguments.
+ * Return: 0 - success.
  */
-int main(int argc, char **argv)
-{
-	(void)argv;
 
+int main(int argc, char *argv[] __attribute__((unused)))
+{
 	printf("%d\n", argc - 1);
 	return (0);
 }
